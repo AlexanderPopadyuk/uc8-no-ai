@@ -70,6 +70,7 @@ export const Form = ({ onSubmit: onSubmitProp }) => {
               name={name}
               value={state.values[name] || ''}
               onChange={onChange(name, validation)}
+              data-testid="form-input"
             />
             {state.errors[name] && <p className="main-input__error">{state.errors[name]}</p>}
           </div>

@@ -1,8 +1,12 @@
 import { render, screen } from '@testing-library/react';
 import { App } from './App';
 
-test('renders learn react link', () => {
+jest.mock('./containers/FormContainer', () => ({
+  FormContainer: () => <div data-testid="form-container" />
+}));
+
+test('renders FormContainer', () => {
   render(<App />);
-  const linkElement = screen.getByText(/App/i);
+  const linkElement = screen.getByTestId('form-container');
   expect(linkElement).toBeInTheDocument();
 });
