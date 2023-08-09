@@ -3,7 +3,7 @@ import { FormContainer } from './FormContainer';
 import { Provider } from 'react-redux';
 import { store } from '../store/store';
 
-var mockForm = jest.fn()
+let mockForm = jest.fn()
 jest.mock('../components/Form', () => ({
   Form: jest.fn(props => {
     mockForm(props);
