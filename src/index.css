@@ -11,3 +11,56 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.main-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  padding: 8px;
+  background: aliceblue;
+  box-sizing: border-box;
+}
+
+.main-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-input {
+  margin: 8px 0;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+
+.main-input__title {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.main-input__input {
+  padding: 8px;
+}
+
+.main-input__error {
+  margin-top: 8px;
+  margin-bottom: 0;
+  color: rgb(244, 67, 54);
+  font-size: 12px;
+}
+
+.main-button {
+  background: rgb(25, 118, 210);
+  color: #fff;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.main-form .main-button {
+  margin-top: 8px;
+}
